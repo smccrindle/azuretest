@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Frog &amp; Toad</title>
+		<style>
+			header {
+				border: 1px solid red;
+				height: 180px;
+			}
+			/* Suckerfish drop menus */
+			nav {
+				/*border: 5px dotted red;*/
+				position: absolute;	
+			}
+			nav ul {
+				border: 5px solid orange;	
+				/* turn off bullets */
+				list-style-type: none;
+				/* get rid of white space */
+				padding: 0;
+				margin: 0;
+			}
+			nav li {
+				border: 5px solid green;
+				/* arrange horiz */
+				float: left;
+			}
+			nav a {
+				background-color: lightblue;
+				/* make links full width */
+				display: block;
+				padding: 0.5em;	
+			}
+			/* link interaction */
+			nav a:link {
+				background: lightblue;	
+			}
+			nav a:visited {
+				background: pink;	
+			}
+			nav a:focus {
+				background: orange;	
+			}
+			nav a:hover {
+				background: white;
+			}
+			nav a:active {
+				background: black;	
+			}
+			nav li ul {
+				/* hide 2nd-level UL elements */
+				/*position: absolute;
+				left: -9999px;*/
+				/* http://css3.bradshawenterprises.com/animating_height/ */
+				/* Initially we don't want any height, and we want the contents to be hidden */
+				max-height: 0;
+				overflow: hidden;
+
+				/* Set our transitions up. */
+				-webkit-transition: max-height 0.5s;
+				-moz-transition: max-height 0.5s;
+				transition: max-height 0.5s;
+			}
+			/* reveal 2nd-level ULs on hover */
+			nav li:hover ul {
+				max-height: 500px;	
+			}
+			/* put 2nd-level LIs in a vertical list */
+			nav li li {
+				float: none;	
+			}
+			main {
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Frog &amp; Toad</h1>
+			<p>A series of easy-reader children&rsquo;s books, written and illustrated by <cite>Arnold Lobel</cite></p>
+			<nav>
+				<ul>
+					<li><a href="" title="">Frog &amp; Toad Are Friends</a>
+						<ul>
+							<li><a href="" title="">Spring</a></li>
+							<li><a href="" title="">The Story</a></li>
+							<li><a href="" title="">A Lost Button</a></li>
+							<li><a href="" title="">A Swim</a></li>
+							<li><a href="" title="">The Letter</a></li>
+						</ul>
+					</li>
+					<li><a href="" title="">Frog &amp; Toad Together</a>
+						<ul>
+							<li><a href="" title="">A List</a></li>
+							<li><a href="" title="">The Garden</a></li>
+							<li><a href="" title="">Cookies</a></li>
+							<li><a href="" title="">Dragons and Giants</a></li>
+							<li><a href="" title="">The Dream</a></li>
+						</ul>
+					</li>
+					<li><a href="" title="">Frog &amp; Toad All Year</a>
+						<ul>
+							<li><a href="" title="">Down The Hill</a></li>
+							<li><a href="" title="">The Corner</a></li>
+							<li><a href="" title="">Ice Cream</a></li>
+							<li><a href="" title="">The Surprise</a></li>
+							<li><a href="" title="">Christmas Eve</a></li>
+						</ul>
+					</li>
+					<li><a href="" title="">Days With Frog &amp; Toad</a>
+						<ul>
+							<li><a href="" title="">Tomorrow</a></li>
+							<li><a href="" title="">The Kite</a></li>
+							<li><a href="" title="">Shivers</a></li>
+							<li><a href="" title="">The Hat</a></li>
+							<li><a href="" title="">Alone</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<p><img src="images/frog_and_toad_with_snail.jpg" alt="Frog and Toad accept a letter from snail">Frog and Toad are the main characters in a series of easy-reader children's books, written and illustrated by Arnold Lobel.</p>
+			<p>Each book contains five simple, often humorous, sometimes poignant, short stories chronicling the exploits of a frog and his friend, a toad, simply named Frog and Toad. Some of their adventures include: attempting to fly a kite, cleaning Toad's messy house as opposed to waiting until "Tomorrow" to do so, and figuring out the ethics of being "Alone".</p>
+			<p>The two protagonists do carry specific traits about their personalities and appearance. Frog is taller, with a green shade, and is more friendly and relaxed than Toad; Toad is shorter and stout, with a brown shade and also the more serious and irritable of the duo.</p>
+			<p>Taken from the article, <cite><a href="http://en.wikipedia.org/wiki/Frog_and_Toad" title="Read about Frog and Toad at Wikipedia">Frog and Toad</a></cite> at <a href="http://wikipedia.org/" title="Wikipedia: The Free Encyclopedia">Wikipedia</a></p>
+		</main>
+		<footer>
+			<p>Text is available under the <a href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" title="Learn more about Creative Commons">Creative Commons Attribution-ShareAlike License</a>; additional terms may apply. See the <a href="http://wikimediafoundation.org/wiki/Terms_of_use" title="Learn more about Wikipedia's terms of use">Wikipedia Terms of use</a> for details.</p>
+		</footer>
+	</body>
+</html>
